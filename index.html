@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Luis Carlos Rojas | Junior Backend Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Luis Carlos Rojas — Junior Backend Engineer (Python, Flask, SQL/SQLite)."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">LCR</div>
+          <div class="brand-text">
+            <div class="brand-name">Luis Carlos Rojas</div>
+            <div class="brand-role">Junior Backend Engineer</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#projects" data-i18n="nav_projects">Projects</a>
+          <a href="#case-study" data-i18n="nav_case_study">Case Study</a>
+          <a href="#skills" data-i18n="nav_skills">Skills</a>
+          <a href="#contact" data-i18n="nav_contact">Contact</a>
+        </nav>
+        <button id="langToggle" class="btn small" type="button" aria-label="Toggle language">
+          ES
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-left">
+            <p class="kicker" data-i18n="kicker">Backend-focused portfolio</p>
+            <h1 data-i18n="hero_title">
+            Building reliable, data-driven applications with Python and SQL.
+          </h1>
+            <p class="lede" data-i18n="hero_lede">
+              I build backend systems with clean architecture, well-structured databases, and
+              clear documentation. Recently completed Harvard’s CS50 and shipped a full-stack
+              Flask project with authentication, relational modeling, and streak/business logic.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn primary" href="#projects">View projects</a>
+              <a class="btn" href="#case-study">Read case study</a>
+            </div>
+
+            <div class="link-row" role="list" aria-label="Profile links">
+              <a role="listitem" href="https://github.com/Red-0110" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+              <a role="listitem" href="https://www.linkedin.com/in/luis-carlos-35b470192/" target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
+              <a role="listitem" href="resume.pdf" target="_blank" rel="noreferrer">
+                Resume (PDF)
+              </a>
+              <a role="listitem" href="mailto:luis.rojasdev0@gmail.com">Email</a>
+            </div>
+
+            <div class="meta">
+              <span class="pill">Python</span>
+              <span class="pill">Flask</span>
+              <span class="pill">SQL / SQLite</span>
+              <span class="pill">Git</span>
+            </div>
+          </div>
+
+          <aside class="hero-right" aria-label="Highlights">
+            <div class="card">
+              <h2 class="card-title">What I bring</h2>
+              <ul class="bullets">
+                <li>Relational data modeling (constraints, keys, normalization)</li>
+                <li>Flask routes & server-side validation</li>
+                <li>Session-based authentication</li>
+                <li>Readable code and documentation-first thinking</li>
+              </ul>
+            </div>
+
+            <div class="card subtle">
+              <h2 class="card-title">Open to roles</h2>
+              <p class="small">
+                Junior Backend Engineer • Software Engineer I • Python Developer •
+                Full-stack Developer • Web Developer
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="projects_title">Projects</h2>
+            <p class="muted" data-i18n="projects_subtitle">
+              Here are a few of my projects! You'll see a card with some general information, for a more in-depth view, click on the relevant card.
+            </p>
+          </div>
+
+          <div class="grid">
+            <!-- FEATURED PROJECT -->
+            <article class="project card">
+              <div class="project-top">
+                <h3>Smart Habit Tracker</h3>
+                <span class="tag">Featured</span>
+              </div>
+
+              <p class="muted" data-i18n="featured_desc">
+                Full-stack habit tracking web app with user authentication, normalized schem,
+                category support, time-series logging, and personalized goal-tracking built with 
+                Flask, SQLAlchemy, and SQLite.
+              </p>
+
+              <ul class="chips" aria-label="Tech stack">
+                <li>Python</li>
+                <li>Flask</li>
+                <li>SQLite</li>
+                <li>Jinja</li>
+                <li>HTML/CSS</li>
+              </ul>
+
+              <div class="actions">
+                <a class="btn small" href="https://github.com/Red-0110" target="_blank" rel="noreferrer">
+                  View code
+                </a>
+                <a class="btn small" href="#case-study">
+                  Case study
+                </a>
+              </div>
+
+              <div class="project-notes">
+                <p class="small">
+                  Highlights: Session authentification, server-side validation, logging values,
+                  edge-case handling (duplicate logs, missed days, resets).
+                </p>
+              </div>
+            </article>
+
+            <!-- OPTIONAL: MINI PROJECTS (replace placeholders later) -->
+            <article class="project card">
+              <div class="project-top">
+                <h3>Flask REST API (Mini Project)</h3>
+                <span class="tag ghost">Optional</span>
+              </div>
+
+              <p class="muted">
+                A small JSON API showcasing CRUD endpoints, input validation, and clear error handling.
+              </p>
+
+              <ul class="chips" aria-label="Tech stack">
+                <li>Python</li>
+                <li>Flask</li>
+                <li>SQLite</li>
+              </ul>
+
+              <div class="actions">
+                <a class="btn small" href="https://github.com/Red-0110" target="_blank" rel="noreferrer">
+                  View code
+                </a>
+              </div>
+
+              <div class="project-notes">
+                <p class="small">
+                  Suggestion: add OpenAPI-style docs in the README and include example requests/responses.
+                </p>
+              </div>
+            </article>
+
+            <article class="project card">
+              <div class="project-top">
+                <h3>Python CLI Tool (Mini Project)</h3>
+                <span class="tag ghost">Optional</span>
+              </div>
+
+              <p class="muted">
+                Command-line utility that reads/writes data (CSV/SQLite) and produces useful summaries.
+              </p>
+
+              <ul class="chips" aria-label="Tech stack">
+                <li>Python</li>
+                <li>SQLite</li>
+              </ul>
+
+              <div class="actions">
+                <a class="btn small" href="https://github.com/Red-0110" target="_blank" rel="noreferrer">
+                  View code
+                </a>
+              </div>
+
+              <div class="project-notes">
+                <p class="small">
+                  Suggestion: include robust argparse usage, helpful errors, and tests for core functions.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CASE STUDY -->
+      <section id="case-study" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Backend Architecture: Smart Habit Tracker</h2>
+            <p class="muted">
+            This section presents the architecture, data model, and core engineering decisions behind the full-stack
+            habit tracking application. The focus is on how user data, habits, and time-series activity are modeled,
+            secured, and processed using Flask, SQLAlchemy, and a relational database.
+            </p>
+          </div>
+
+          <div class="case-grid">
+            <div class="card">
+              <h3>Problem</h3>
+              <p>
+                Many existing habit trackers offer limited personalization and shallow data modeling.
+                This application enables users to define and categorize their own habits, 
+                log completions with precise timestamps, and visualize progress through graphs and streak indicators.
+                Built with a backend-first approach, the system models users, habits, 
+                and activity logs using relational constraints and is designed to handle real-world edge cases around data integrity and user isolation.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Architecture</h3>
+              <ul class="bullets">
+                <li><strong>Routes:</strong> Flask request handlers, server-side validation</li>
+                <li><strong>Templates:</strong> Jinja rendering for dynamic pages</li>
+                <li><strong>Data:</strong> SQLite schema with foreign keys and constraints</li>
+                <li><strong>Auth:</strong> session-based login & protected routes</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Database Design</h3>
+              <p class="small muted">Normalized relational shchema (SQLite) with enforced constraints:</p>
+              <pre class="code" aria-label="Database tables">
+users(id, username, email, password_hash, nudge_preference, weekly_goal, email_reminders)
+
+habit_categories(id, name, user_id)
+  • Unique per (user_id, name)
+
+habits_logs(id, timestamp, completed, habit_id, user_id)
+  • Indexed on timestamp and foreign keys
+              </pre>
+              <ul class="bullets">
+                <li>Foreign keys enforce user ownership of habits and logs</li>
+                <li>Unique constraint prevents duplicate categories per user</li>
+                <li>Indexed time-series queries support streak and history analysis</li>
+                <li>Authentication-ready user model with preferences and goal tracking</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Core Features</h3>
+              <ul class="bullets">
+                <li>Secure user registration and login</li>
+                <li>Habit creation and categorization per-user</li>
+                <li>Daily habit completion logging</li>
+                <li>Streaks</li>
+                <li>Weekly goal tracking and reminders</li>
+                <li>Server-side validation and authorization</li>
+                <li>Relational integrity enforced at the database level</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Edge Cases & Integrity</h3>
+              <ul class="bullets">
+                <li>Prevents cross-user access to habits and logs</li>
+                <li>Ensures category names are unique per user</li>
+                <li>Handles optional categorization</li>
+                <li>Supports historical queries via timestamps</li>
+              </ul>
+            </div>
+
+           <!-- <div class="card"> 
+              <h3>Next Improvements</h3>
+              <ul class="bullets">
+                <li>Migrate from SQLite to PostgreSQL</li>
+                <li>Add REST API endpoints + documentation</li>
+                <li>Add tests for streak and logging logic</li>
+                <li>Deploy with environment-based config and production hardening</li>
+              </ul>
+            </div>
+          </div> -->
+
+          <div class="case-cta">
+            <a class="btn primary" href="https://github.com/Red-0110" target="_blank" rel="noreferrer">
+              View Smart Habit Tracker on GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Skills</h2>
+            <p class="muted">A concise, ATS-friendly breakdown.</p>
+          </div>
+
+          <div class="grid skills-grid">
+            <div class="card">
+              <h3>Languages</h3>
+              <ul class="bullets">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>C</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Frameworks & Libraries</h3>
+              <ul class="bullets">
+                <li>Flask</li>
+                <li>Jinja</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Databases</h3>
+              <ul class="bullets">
+                <li>SQLite</li>
+                <li>(Planned) PostgreSQL</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Tools</h3>
+              <ul class="bullets">
+                <li>Git</li>
+                <li>Linux</li>
+                <li>VS Code</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p class="muted">
+              If you share your GitHub repo link for the CS50 project, I can tighten the case study to match the real implementation.
+            </p>
+          </div>
+
+          <div class="card contact-card">
+            <div>
+              <h3>Let’s talk</h3>
+              <p class="muted">
+                Email is the fastest way to reach me. I can also share a one-page resume PDF upon request.
+              </p>
+            </div>
+
+            <div class="contact-actions">
+              <a class="btn primary" href="mailto:luis.rojasdev0@gmail.com" data-i18n="contact_cta">Email me</a>
+              <a class="btn" href="https://github.com/Red-0110" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn" href="https://www.linkedin.com/in/luis-carlos-35b470192/" target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="small muted">© <span id="year"></span> Luis Carlos Rojas. Built with HTML/CSS.</p>
+        <a class="small" href="#main">Back to top</a>
+      </div>
+    </footer>
+    <script>
+      // Footer year (keep if you already had it)
+      const yearEl = document.getElementById("year");
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    
+      const translations = {
+        en: {
+          kicker: "Backend-focused portfolio",
+          hero_title: "Building reliable, data-driven applications with Python and SQL.",
+          hero_lede:
+            "I build backend systems with clean architecture, well-structured databases, and clear documentation.",
+    
+          nav_projects: "Projects",
+          nav_case_study: "Case Study",
+          nav_skills: "Skills",
+          nav_contact: "Contact",
+    
+          projects_title: "Projects",
+          projects_subtitle: "Recruiter-friendly summaries first. Technical depth below.",
+    
+          featured_desc:
+            "A full-stack habit tracking system with authenticated users, normalized relational schema, category support, time-series logging, and preference-driven goal tracking built with Flask, SQLAlchemy, and SQLite.",
+    
+          contact_cta: "Email me"
+        },
+    
+        es: {
+          kicker: "Portafolio enfocado en backend",
+          hero_title: "Desarrollo aplicaciones confiables y basadas en datos con Python y SQL.",
+          hero_lede:
+            "Construyo sistemas backend con arquitectura clara, bases de datos bien estructuradas y documentación precisa.",
+    
+          nav_projects: "Proyectos",
+          nav_case_study: "Caso de estudio",
+          nav_skills: "Habilidades",
+          nav_contact: "Contacto",
+    
+          projects_title: "Proyectos",
+          projects_subtitle: "Primero un resumen claro; luego la parte técnica.",
+    
+          featured_desc:
+            "Sistema full-stack para seguimiento de hábitos con usuarios autenticados, esquema relacional normalizado, categorías, registro temporal de actividad y metas/preferencias por usuario usando Flask, SQLAlchemy y SQLite.",
+    
+          contact_cta: "Envíame un email"
+        }
+      };
+    
+      function applyLanguage(lang) {
+        const dict = translations[lang] || translations.en;
+    
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (dict[key]) el.textContent = dict[key];
+        });
+    
+        const toggle = document.getElementById("langToggle");
+        if (toggle) toggle.textContent = lang === "en" ? "ES" : "EN";
+    
+        localStorage.setItem("lang", lang);
+        document.documentElement.lang = lang;
+      }
+    
+      const savedLang = localStorage.getItem("lang") || "en";
+      applyLanguage(savedLang);
+    
+      const toggleBtn = document.getElementById("langToggle");
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", () => {
+          const current = localStorage.getItem("lang") || "en";
+          applyLanguage(current === "en" ? "es" : "en");
+        });
+      }
+    </script>    
+  </body>
+</html>
